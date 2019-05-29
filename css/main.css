@@ -98,7 +98,6 @@ body * {
             .content form {
                 display: inline-block;
                 width: 100%;
-                margin-top: 20px;
                 color: var(--dark-color);
             }
                 .content form > input {
@@ -131,6 +130,13 @@ body * {
                 .content ::placeholder {
                     color: var(--dark-color);
                 }
+
+.content h2 {
+
+}
+.content p {
+    margin-bottom: 20px;
+}
 
 footer {
     display: inline-block;
