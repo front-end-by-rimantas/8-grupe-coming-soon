@@ -1,0 +1,15 @@
+.btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--secondary-color-anti);
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px #777;
+    cursor: pointer;
+}
+    .btn:hover {
+        /* background-color: var(--secondary-color); */
+        box-shadow: 0 1px 4px #333;
+    }
