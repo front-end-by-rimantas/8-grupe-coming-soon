@@ -120,6 +120,12 @@ body * {
                     font-size: 24px;
                     border: none;
                     border-bottom: 1px solid #CCC;
+                    resize: vertical;
+                    max-height: 300px;
+                    min-height: 80px;
+                }
+                .content form > .btn {
+                    float: right;
                 }
                 .content ::-webkit-input-placeholder { /* Edge */
                     color: var(--dark-color);
@@ -183,3 +189,51 @@ footer {
             cursor: pointer;
             text-decoration: none;
         }
+
+@media ( max-width: 900px ) {
+    .content > .container {
+        width: 100%;
+        margin: 0;
+        padding: 40px;
+    }
+    .content > .container > .left {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .content > .container > .right {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    footer > .container {
+        width: 100%;
+        margin: 0;
+    }
+        footer .fa-angle-up {
+            display: none;
+        }
+}
+
+@media ( max-width: 700px ) {
+    .hero > .container {
+        width: 100%;
+        margin: 40px 0;
+        padding: 0 40px;
+    }
+    footer .bottom-texts {
+        padding: 20px 20px 40px;
+    }
+}
+
+@media ( max-width: 500px ) {
+    .clock > .col {
+        width: 50%;
+    }
+    .content form > input {
+        width: 100%;
+    }
+        .content form > input.margin-10 {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+}
