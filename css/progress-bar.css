@@ -29,5 +29,22 @@
             display: inline-block;
             width: 90%;
             height: 100%;
-            background-color: var(--main-color);
         }
+            .progress-bar > .bar > .bar-value > .loading {
+                display: inline-block;
+                background-color: var(--main-color);
+                height: 100%;
+                width: 100%;
+                animation-name: augimas;
+                animation-duration: 2s;
+                /* animation-iteration-count: infinite; */
+            }
+
+@keyframes augimas {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
